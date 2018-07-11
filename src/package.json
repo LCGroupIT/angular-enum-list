@@ -1,0 +1,33 @@
+{
+  "name": "angular-enum-list",
+  "version": "0.1.0",
+  "homepage": "https://github.com/LCGroupIT/angular-enum-list",
+  "author": {
+    "name": "Svetlana Pichugina"
+  },
+  "license": "MIT",
+  "description": "Angular 6+ localizablefor enumsr",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LCGroupIT/angular-enum-list.git"
+  },
+  "keywords": [
+    "api",
+    "angular",
+    "enum",
+    "i18next"
+  ],
+  "bugs": {
+    "url": "https://github.com/LCGroupIT/angular-enum-list/issues"
+  },
+  "maintainers": [
+    {
+      "email": "soniera.iv@gmail.com",
+      "name": "Svetlana Pichugina"
+    }
+  ],
+  "peerDependencies": {
+    "@angular/common": ">=6.0.0 <=7.0.0",
+    "@angular/core": ">=6.0.0 <=7.0.0"
+  }
+}
