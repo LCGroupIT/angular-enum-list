@@ -15,8 +15,10 @@ export class EnumsPipe implements PipeTransform {
             Object.keys(currentEnum)
                 .filter((x) => Number.isNaN(parseInt(x, 10)))
                 .map((key) => {
-                    resultArray.push({id: currentEnum[key], name: `${nameSpace}:${dictName}.${key}`})
-                })
+                    if (!(!canBeEmpty && key === 'Undefined')) {
+                        resultArray.push({id: currentEnum[key], name: `${nameSpace}:${dictName}.${key}`});
+                    }
+                });
         }
         return resultArray;
     }
