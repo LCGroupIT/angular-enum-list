@@ -12,4 +12,4 @@ import { EnumsPipe } from "./enums.pipe";
 })
 
 
-export class EnumsModule {}
+export class AngularEnumsListModule {}
