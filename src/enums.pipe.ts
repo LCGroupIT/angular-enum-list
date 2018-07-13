@@ -1,14 +1,18 @@
-import { Pipe, PipeTransform } from '@angular/core';
+import { Inject, Injectable, Pipe, PipeTransform } from '@angular/core';
+import * as EnumsTokens from './enums.tokens';
 
 @Pipe({
-    name: 'enum'
+    name: 'enum-list'
 })
+
+@Injectable()
 export class EnumsPipe implements PipeTransform {
-    constructor() {
+    constructor(@Inject(EnumsTokens.NAMESPACE_NAME) private nameSpaceGlobal: string,
+                @Inject(EnumsTokens.SEPARATOR_NAME) private separatorGlobal: string) {
     }
 
-    transform(currentEnum: any, {dictName, canBeEmpty = true, nameSpace = 'enums'}) {
-
+    transform(currentEnum: any, {dictName, canBeEmpty = true, nameSpace}) {
+        const currentNameSpace = nameSpace ? nameSpace : this.nameSpaceGlobal;
         const resultArray = [];
 
         if (currentEnum) {
@@ -16,7 +20,7 @@ export class EnumsPipe implements PipeTransform {
                 .filter((x) => Number.isNaN(parseInt(x, 10)))
                 .map((key) => {
                     if (!(!canBeEmpty && key === 'Undefined')) {
-                        resultArray.push({id: currentEnum[key], name: `${nameSpace}:${dictName}.${key}`});
+                        resultArray.push({id: currentEnum[key], name: `${currentNameSpace}${this.separatorGlobal}${dictName}.${key}`});
                     }
                 });
         }
