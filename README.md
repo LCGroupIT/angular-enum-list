@@ -44,4 +44,15 @@ You can configurate name of localize namespase for global context and separator 
 
 Use "enumList" pipe to get the array with translation keys:
 
-    <div>{{ myEnum | enumList }}</div>
+    <div>{{ myEnum | enumList: { dictName: 'list' } }}</div>
+    
+Pipe has one required parameter "dictName". It's name of dictionary in localization file.
+Other params are optional. You can add the folowing parametrs:
+
+canBeEmpty 
+
+If in your enum is "Undefined" field, will be ignored this one.
+
+nameSpace
+
+You can specify nameSpace parameter for particularly pipes.
