@@ -6,7 +6,7 @@
     "name": "Svetlana Pichugina"
   },
   "license": "MIT",
-  "description": "Angular 6+ localizablefor enumsr",
+  "description": "Angular 6+ localizable for enums",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LCGroupIT/angular-enum-list.git"
@@ -26,6 +26,9 @@
       "name": "Svetlana Pichugina"
     }
   ],
+  "module": "angular-enum-list.es5.js",
+  "es2015": "angular-enum-list.js",
+  "typings": "angular-enum-list.d.ts",
   "peerDependencies": {
     "@angular/common": ">=6.0.0 <=7.0.0",
     "@angular/core": ">=6.0.0 <=7.0.0"

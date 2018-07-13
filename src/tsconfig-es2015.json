@@ -21,7 +21,7 @@
         "annotateForClosureCompiler": true,
         "strictMetadataEmit": true,
         "skipTemplateCodegen": true,
-        "flatModuleOutFile": "angular-i18next-error-interceptor.js",
-        "flatModuleId": "angular-i18next-error-interceptor"
+        "flatModuleOutFile": "angular-enum-list.js",
+        "flatModuleId": "angular-enum-list"
     }
 }

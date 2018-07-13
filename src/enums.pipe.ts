@@ -2,7 +2,7 @@ import { Inject, Injectable, Pipe, PipeTransform } from '@angular/core';
 import * as EnumsTokens from './enums.tokens';
 
 @Pipe({
-    name: 'enum-list'
+    name: 'enumList'
 })
 
 @Injectable()
