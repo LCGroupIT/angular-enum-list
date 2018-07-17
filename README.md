@@ -90,12 +90,14 @@ ru.enums.json
  
  For example you can use this list in native select in html-file:
 ```html
- <select class="form-control" formControlName="SexKind" [(ngModel)]="model.SexKind">
-      <option *ngFor='let status of enums.SexKind | enumList : { canBeEmpty: false, dictName: "SexKind" }'
-              [ngValue]='status.id'>
+ <select class="form-control" 
+         formControlName="SexKind" 
+         [(ngModel)]="model.SexKind">
+    <option *ngFor='let status of enums.SexKind | enumList : { canBeEmpty: false, dictName: "SexKind" }'
+            [ngValue]='status.id'>
         {{ status.name | i18nextCap }}
-      </option>
-    </select>
+    </option>
+ </select>
 ```
 "enums" is public variable which contains enums you need to use in your template:
 
