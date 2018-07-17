@@ -6,6 +6,7 @@ This package can be used for transformation enum's values to array where names a
 
  - [Installation](#installation)
  - [Usage](#usage)
+ - [Dictionary](#dictionary)
  
  
 # Installation
@@ -44,15 +45,54 @@ You can configurate name of localize namespase for global context and separator 
 
 Use "enumList" pipe to get the array with translation keys:
 
-    <div>{{ myEnum | enumList: { dictName: 'list' } }}</div>
+    <div *ngFor="let item of myEnum | enumList: { dictName: 'list' }" [id]="item.id">{{ item.name | i18next }}</div>
     
 Pipe has one required parameter "dictName". It's name of dictionary in localization file.
 Other params are optional. You can add the folowing parametrs:
 
-canBeEmpty 
+```canBeEmpty```
+```<div *ngFor="let item of myEnum | enumList: { dictName: 'list', canBeEmpty: true }" [id]="item.id">
+ {{ item.name | i18next }}
+</div>```
 
 If in your enum is "Undefined" field, will be ignored this one.
 
-nameSpace
+```nameSpace```
+
+```<div *ngFor="let item of myEnum | enumList: { dictName: 'list', nameSpace: 'my-favorite-enums' }" [id]="item.id">
+ {{ item.name | i18next }}
+</div>```
 
 You can specify nameSpace parameter for particularly pipes.
+
+# Dictionary
+
+Your own dictionary must be looks like:
+
+ru.enums.json
+```
+{
+"SexKind": {
+    "Undefined": "Не выбрано"
+    "Male": "Мужской",
+    "Female": "Женский"
+  }
+}
+ ```
+ 
+ You can use this list in native select in html-file:
+
+```<select class="form-control"
+            formControlName="SexKind"
+            [(ngModel)]="model.SexKind"
+            validationMessage>
+      <option *ngFor='let status of _enums.SexKind | enumList : { canBeEmpty: false, dictName: "SexKind" }'
+              [ngValue]='status.id'>
+        {{ status.name | i18nextCap }}
+      </option>
+    </select>
+    ```
+
+in this code ```_enums``` is public variable which contains enums you need in your template:
+
+```public _enums = { SexKind, RaceKind };```
