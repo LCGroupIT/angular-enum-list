@@ -50,18 +50,24 @@ Use "enumList" pipe to get the array with translation keys:
 Pipe has one required parameter "dictName". It's name of dictionary in localization file.
 Other params are optional. You can add the folowing parametrs:
 
-```canBeEmpty```
-```<div *ngFor="let item of myEnum | enumList: { dictName: 'list', canBeEmpty: true }" [id]="item.id">
+```javascript
+canBeEmpty
+```
+```html
+<div *ngFor="let item of myEnum | enumList: { dictName: 'list', canBeEmpty: true }" [id]="item.id">
  {{ item.name | i18next }}
-</div>```
+</div>
+```
 
 If in your enum is "Undefined" field, will be ignored this one.
 
-```nameSpace```
+```typescript
+nameSpace```
 
-```<div *ngFor="let item of myEnum | enumList: { dictName: 'list', nameSpace: 'my-favorite-enums' }" [id]="item.id">
+
+<div *ngFor="let item of myEnum | enumList: { dictName: 'list', nameSpace: 'my-favorite-enums' }" [id]="item.id">
  {{ item.name | i18next }}
-</div>```
+</div>
 
 You can specify nameSpace parameter for particularly pipes.
 
@@ -70,7 +76,7 @@ You can specify nameSpace parameter for particularly pipes.
 Your own dictionary must be looks like:
 
 ru.enums.json
-```
+```typescript
 {
 "SexKind": {
     "Undefined": "Не выбрано"
@@ -82,7 +88,7 @@ ru.enums.json
  
  You can use this list in native select in html-file:
 
-```<select class="form-control"
+  <select class="form-control"
             formControlName="SexKind"
             [(ngModel)]="model.SexKind"
             validationMessage>
@@ -91,8 +97,7 @@ ru.enums.json
         {{ status.name | i18nextCap }}
       </option>
     </select>
-    ```
 
-in this code ```_enums``` is public variable which contains enums you need in your template:
+in this code ```typescript _enums``` is public variable which contains enums you need in your template:
 
-```public _enums = { SexKind, RaceKind };```
+```typescript public _enums = { SexKind, RaceKind };```
