@@ -81,7 +81,7 @@ ru.enums.json
 ```typescript
 {
 "SexKind": {
-    "Undefined": "Не выбрано"
+    "Undefined": "Не выбрано",
     "Male": "Мужской",
     "Female": "Женский"
   }
@@ -89,14 +89,16 @@ ru.enums.json
 ```
  
  You can use this list in native select in html-file:
-
+```html
  <select class="form-control" formControlName="SexKind" [(ngModel)]="model.SexKind">
-      <option *ngFor='let status of _enums.SexKind | enumList : { canBeEmpty: false, dictName: "SexKind" }'
+      <option *ngFor='let status of enums.SexKind | enumList : { canBeEmpty: false, dictName: "SexKind" }'
               [ngValue]='status.id'>
         {{ status.name | i18nextCap }}
       </option>
     </select>
+```
+in this code enums is public variable which contains enums you need in your template:
 
-in this code ```typescript _enums``` is public variable which contains enums you need in your template:
-
-```typescript public _enums = { SexKind, RaceKind };```
+```typescript 
+public enums = { SexKind, RaceKind };
+```
