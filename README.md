@@ -64,11 +64,11 @@ If in your enum is "Undefined" field, will be ignored this one.
 ```typescript
 nameSpace
 ```
-
-
+```html
 <div *ngFor="let item of myEnum | enumList: { dictName: 'list', nameSpace: 'my-favorite-enums' }" [id]="item.id">
  {{ item.name | i18next }}
 </div>
+```
 
 You can specify nameSpace parameter for particularly pipes.
 
@@ -90,13 +90,12 @@ ru.enums.json
  
  You can use this list in native select in html-file:
 
-```html  <select class="form-control" formControlName="SexKind" [(ngModel)]="model.SexKind">
+ <select class="form-control" formControlName="SexKind" [(ngModel)]="model.SexKind">
       <option *ngFor='let status of _enums.SexKind | enumList : { canBeEmpty: false, dictName: "SexKind" }'
               [ngValue]='status.id'>
         {{ status.name | i18nextCap }}
       </option>
     </select>
-    ```
 
 in this code ```typescript _enums``` is public variable which contains enums you need in your template:
 
