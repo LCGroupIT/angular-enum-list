@@ -1,14 +1,17 @@
 import { ModuleWithProviders, NgModule } from '@angular/core';
 import { EnumsPipe } from './enums.pipe';
 import * as EnumsTokens from './enums.tokens';
+import { EnumsKeyPipe } from './enumKey.pipe';
 
 
 @NgModule({
     declarations: [
-        EnumsPipe
+        EnumsPipe,
+        EnumsKeyPipe
     ],
     exports: [
-        EnumsPipe
+        EnumsPipe,
+        EnumsKeyPipe
     ]
 })
 

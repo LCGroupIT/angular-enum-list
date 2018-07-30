@@ -11,7 +11,7 @@ export class EnumsPipe implements PipeTransform {
                 @Inject(EnumsTokens.SEPARATOR_NAME) private separatorGlobal: string) {
     }
 
-    transform(currentEnum: any, {dictName, canBeEmpty = true, nameSpace}) {
+    transform(currentEnum: any, {dictName, canBeEmpty = true, nameSpace, nullFields = ['Undefined']}) {
         const currentNameSpace = nameSpace ? nameSpace : this.nameSpaceGlobal;
         const resultArray = [];
 
@@ -19,7 +19,7 @@ export class EnumsPipe implements PipeTransform {
             Object.keys(currentEnum)
                 .filter((x) => Number.isNaN(parseInt(x, 10)))
                 .map((key) => {
-                    if (!(!canBeEmpty && key === 'Undefined')) {
+                    if (!(!canBeEmpty && nullFields.find((field) => field === key))) {
                         resultArray.push({id: currentEnum[key], name: `${currentNameSpace}${this.separatorGlobal}${dictName}.${key}`});
                     }
                 });
