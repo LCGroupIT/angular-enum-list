@@ -14,8 +14,8 @@ export class EnumsKeyPipe implements PipeTransform {
     transform(key: any, {dictName, currentEnum, nameSpace}) {
         const currentNameSpace = nameSpace ? nameSpace : this.nameSpaceGlobal;
         let resultKeyPath = '';
-        if (currentEnum && currentEnum.get('key')) {
-            resultKeyPath =  `${currentNameSpace}${this.separatorGlobal}${dictName}.${currentEnum.get('key')}`;
+        if (currentEnum && currentEnum[key]) {
+            resultKeyPath =  `${currentNameSpace}${this.separatorGlobal}${dictName}.${currentEnum[key]}`;
         }
         return resultKeyPath;
     }
