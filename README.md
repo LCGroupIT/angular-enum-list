@@ -43,16 +43,14 @@ You can configurate name of localize namespase for global context and separator 
 
 ### Pipes
 
-Use "enumList" pipe to get the array with translation keys:
+Use **"enumList"** pipe to get the array with translation keys:
 
     <div *ngFor="let item of myEnum | enumList: { dictName: 'list' }" [id]="item.id">{{ item.name | i18next }}</div>
     
 Pipe has one required parameter "dictName". It's name of dictionary in localization file.
 Other params are optional. You can add the folowing parametrs:
 
-```javascript
-canBeEmpty
-```
+**canBeEmpty**
 ```html
 <div *ngFor="let item of myEnum | enumList: { dictName: 'list', canBeEmpty: true }" [id]="item.id">
  {{ item.name | i18next }}
@@ -61,9 +59,7 @@ canBeEmpty
 
 If in your enum is "Undefined" field, will be ignored this one.
 
-```typescript
-nameSpace
-```
+**nameSpace**
 ```html
 <div *ngFor="let item of myEnum | enumList: { dictName: 'list', nameSpace: 'my-favorite-enums' }" [id]="item.id">
  {{ item.name | i18next }}
@@ -71,6 +67,43 @@ nameSpace
 ```
 
 You can specify nameSpace parameter for particularly pipes.
+
+**nullFields**
+```html
+<div *ngFor="let item of myEnum | enumList: { dictName: 'list', nullFields: ['Unknown', 'Undefined'], canBeEmpty: false }" [id]="item.id">
+ {{ item.name | i18next }}
+</div>
+```
+
+This parameter is array of ignored fields in your enum. It will be worked is you assign 
+```typescript
+canBeEmpty = true
+```
+
+
+Use **"enumKey"** to get the key of your enum field with all localization path.
+
+```html
+ <div>{{ 'keyOfMyEnum' | enumKey: { dictName: 'list', currentEnum: _enums.myEnum, nameSpace: "my-enums"} | i18nextCap}}</div>
+```
+
+Pipe has  two required parameters: "dictName" and "currentEnum".
+"dictName" is the name of dictionary in localization file.
+"currentEnum" is original enum, where we search the key.
+
+in the end you get result string looks like:
+```html
+<div>{{ my-enum:list.keyOfMyEnum | i18nextCap }}</div>
+```
+
+
+**nameSpace**
+```html
+<div *ngFor="let item of myEnum | enumList: { dictName: 'list', nameSpace: 'my-favorite-enums' }" [id]="item.id">
+ {{ item.name | i18next }}
+</div>
+```
+
 
 # Dictionary
 
