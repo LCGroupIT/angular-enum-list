@@ -1,3 +1,8 @@
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/LCGroupIT/angular-enum-listor/compare/v0.3.0...v1.1.1) (2018-08-31)
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/LCGroupIT/angular-enum-listor/compare/v0.3.0...v1.1.0) (2018-07-30)
 
