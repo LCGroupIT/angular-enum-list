@@ -1,5 +1,6 @@
 import { Inject, Injectable, Pipe, PipeTransform } from '@angular/core';
 import * as EnumsTokens from './enums.tokens';
+import { SelectorOptionalsModel } from './selectorOptionals.model';
 
 @Pipe({
     name: 'enumList'
@@ -11,7 +12,7 @@ export class EnumsPipe implements PipeTransform {
                 @Inject(EnumsTokens.SEPARATOR_NAME) private separatorGlobal: string) {
     }
 
-    transform(currentEnum: any, {dictName, canBeEmpty = true, nameSpace, nullFields = ['Undefined']}) {
+    transform(currentEnum: any, {dictName, canBeEmpty = true, nameSpace = '', nullFields = ['Undefined']}): SelectorOptionalsModel[] {
         const currentNameSpace = nameSpace ? nameSpace : this.nameSpaceGlobal;
         const resultArray = [];
 
@@ -20,7 +21,7 @@ export class EnumsPipe implements PipeTransform {
                 .filter((x) => Number.isNaN(parseInt(x, 10)))
                 .map((key) => {
                     if (!(!canBeEmpty && nullFields.find((field) => field === key))) {
-                        resultArray.push({id: currentEnum[key], name: `${currentNameSpace}${this.separatorGlobal}${dictName}.${key}`});
+                        resultArray.push(new SelectorOptionalsModel(currentEnum[key], `${currentNameSpace}${this.separatorGlobal}${dictName}.${key}`));
                     }
                 });
         }
