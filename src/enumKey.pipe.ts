@@ -11,10 +11,11 @@ export class EnumsKeyPipe implements PipeTransform {
                 @Inject(EnumsTokens.SEPARATOR_NAME) private separatorGlobal: string) {
     }
 
-    transform(key: any, {dictName, currentEnum, nameSpace}) {
+    transform(value: any, {dictName, currentEnum, nameSpace}) {
         const currentNameSpace = nameSpace ? nameSpace : this.nameSpaceGlobal;
         let resultKeyPath = '';
-        if (currentEnum && currentEnum[key]) {
+        let key = Object.keys(currentEnum).find(key => currentEnum[key] === value);
+        if (currentEnum && key) {
             resultKeyPath =  `${currentNameSpace}${this.separatorGlobal}${dictName}.${key}`;
         }
         return resultKeyPath;
