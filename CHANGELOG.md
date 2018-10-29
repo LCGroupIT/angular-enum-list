@@ -1,3 +1,103 @@
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/LCGroupIT/angular-enum-listor/compare/v0.3.0...v1.1.3) (2018-10-29)
+
+
+
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/LCGroupIT/angular-enum-listor/compare/v0.3.0...v1.1.3) (2018-10-29)
+
+
+
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/LCGroupIT/angular-enum-listor/compare/v0.3.0...v1.1.3) (2018-10-29)
+
+
+
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/LCGroupIT/angular-enum-listor/compare/v0.3.0...v1.1.3) (2018-10-29)
+
+
+
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/LCGroupIT/angular-enum-listor/compare/v0.3.0...v1.1.3) (2018-10-29)
+
+
+
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/LCGroupIT/angular-enum-listor/compare/v0.3.0...v1.1.3) (2018-10-29)
+
+
+
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/LCGroupIT/angular-enum-listor/compare/v0.3.0...v1.1.3) (2018-10-24)
+
+
+
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/LCGroupIT/angular-enum-listor/compare/v0.3.0...v1.1.3) (2018-10-24)
+
+
+
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/LCGroupIT/angular-enum-listor/compare/v0.3.0...v1.1.3) (2018-10-24)
+
+
+
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/LCGroupIT/angular-enum-listor/compare/v0.3.0...v1.1.3) (2018-10-24)
+
+
+
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/LCGroupIT/angular-enum-listor/compare/v0.3.0...v1.1.3) (2018-10-24)
+
+
+
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/LCGroupIT/angular-enum-listor/compare/v0.3.0...v1.1.3) (2018-10-24)
+
+
+
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/LCGroupIT/angular-enum-listor/compare/v0.3.0...v1.1.3) (2018-10-24)
+
+
+
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/LCGroupIT/angular-enum-listor/compare/v0.3.0...v1.1.3) (2018-10-24)
+
+
+
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/LCGroupIT/angular-enum-listor/compare/v0.3.0...v1.1.3) (2018-10-24)
+
+
+
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/LCGroupIT/angular-enum-listor/compare/v0.3.0...v1.1.3) (2018-10-24)
+
+
+
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/LCGroupIT/angular-enum-listor/compare/v0.3.0...v1.1.3) (2018-10-24)
+
+
+
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/LCGroupIT/angular-enum-listor/compare/v0.3.0...v1.1.3) (2018-09-03)
+
+
+
+<a name="1.1.2"></a>
+## [1.1.2](https://github.com/LCGroupIT/angular-enum-listor/compare/v0.3.0...v1.1.2) (2018-09-03)
+
+
+
+<a name="1.1.2"></a>
+## [1.1.2](https://github.com/LCGroupIT/angular-enum-listor/compare/v0.3.0...v1.1.2) (2018-09-03)
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/LCGroupIT/angular-enum-listor/compare/v0.3.0...v1.1.1) (2018-08-31)
 
