@@ -4,10 +4,16 @@ module.exports = function (config) {
     config.set({
         browsers: ['Chrome'],
         colors: true,
+        client: {
+            captureConsole: true,
+            mocha: {
+                bail: true
+            }
+        },
         coverageReporter: {
             dir: './',
             reporters: [
-                { type: 'lcov', subdir: 'coverage' }
+                {type: 'lcov', subdir: 'coverage'}
             ]
         },
         customLaunchers: {
