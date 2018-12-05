@@ -35,7 +35,7 @@ export class AppModule {}
 
 ```
 
-You can configurate name of localize namespase for global context and separator which break namespace and path from localize key
+You can configurate name of localize namespace for global context and separator which break namespace and path from localize key
 
 
 

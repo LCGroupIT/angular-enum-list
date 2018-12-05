@@ -18,7 +18,9 @@
             "es2015",
             "es2015.iterable"
         ],
-        "types": []
+        "types": [
+          "jasmine"
+        ]
     },
     "exclude": [
         "node_modules",
