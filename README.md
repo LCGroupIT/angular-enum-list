@@ -50,15 +50,6 @@ Use **"enumList"** pipe to get the array with translation keys:
 Pipe has one required parameter "dictName". It's name of dictionary in localization file.
 Other params are optional. You can add the folowing parametrs:
 
-**canBeEmpty**
-```html
-<div *ngFor="let item of myEnum | enumList: { dictName: 'list', canBeEmpty: true }" [id]="item.id">
- {{ item.name | i18next }}
-</div>
-```
-
-If in your enum is "Undefined" field, will be ignored this one.
-
 **nameSpace**
 ```html
 <div *ngFor="let item of myEnum | enumList: { dictName: 'list', nameSpace: 'my-favorite-enums' }" [id]="item.id">
@@ -68,18 +59,12 @@ If in your enum is "Undefined" field, will be ignored this one.
 
 You can specify nameSpace parameter for particularly pipes.
 
-**nullFields**
+**ignored**
 ```html
-<div *ngFor="let item of myEnum | enumList: { dictName: 'list', nullFields: ['Unknown', 'Undefined'], canBeEmpty: false }" [id]="item.id">
+<div *ngFor="let item of myEnum | enumList: { dictName: 'list', ignored: ['Unknown', 'Undefined'] }" [id]="item.id">
  {{ item.name | i18next }}
 </div>
 ```
-
-This parameter is array of ignored fields in your enum. It will be worked is you assign 
-```typescript
-canBeEmpty = true
-```
-
 
 Use **"enumKey"** to get the key of your enum field with all localization path.
 
@@ -126,7 +111,7 @@ ru.enums.json
  <select class="form-control" 
          formControlName="SexKind" 
          [(ngModel)]="model.SexKind">
-    <option *ngFor='let status of enums.SexKind | enumList : { canBeEmpty: false, dictName: "SexKind" }'
+    <option *ngFor='let status of enums.SexKind | enumList : { dictName: "SexKind" }'
             [ngValue]='status.id'>
         {{ status.name | i18nextCap }}
     </option>
