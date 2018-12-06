@@ -1,3 +1,7 @@
+## [2.0.1-beta.0](https://github.com/LCGroupIT/angular-enum-listor/compare/v1.2.0...v2.0.1-beta.0) (2018-12-06)
+
+
+
 # [2.0.0](https://github.com/LCGroupIT/angular-enum-listor/compare/v1.2.0...v2.0.0) (2018-12-05)
 
 
