@@ -1,3 +1,12 @@
+# [3.0.0](https://github.com/LCGroupIT/angular-enum-listor/compare/v2.0.1...v3.0.0) (2019-06-04)
+
+
+### Bug Fixes
+
+* added Angular 8 support ([4d90bd5](https://github.com/LCGroupIT/angular-enum-listor/commit/4d90bd5))
+
+
+
 ## [2.0.1](https://github.com/LCGroupIT/angular-enum-listor/compare/v2.0.1-beta.0...v2.0.1) (2018-12-06)
 
 
