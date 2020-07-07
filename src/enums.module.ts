@@ -22,7 +22,7 @@ import { EnumsKeyPipe } from './enumKey.pipe';
 
 
 export class AngularEnumsListModule {
-    static forRoot(namespace: string = null, separator: string = null): ModuleWithProviders {
+    static forRoot(namespace: string = null, separator: string = null): ModuleWithProviders<AngularEnumsListModule> {
         return {
             ngModule: AngularEnumsListModule,
             providers: [
