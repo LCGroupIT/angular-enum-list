@@ -1,3 +1,7 @@
+# [4.0.0](https://github.com/LCGroupIT/angular-enum-listor/compare/v3.0.0...v4.0.0) (2020-07-07)
+
+
+
 # [3.0.0](https://github.com/LCGroupIT/angular-enum-listor/compare/v2.0.1...v3.0.0) (2019-06-04)
 
 
