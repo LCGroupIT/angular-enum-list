@@ -1,6 +1,6 @@
 {
   "name": "angular-enum-list",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "ngPackage": {
     "lib": {
       "entryFile": "src/index.ts"
