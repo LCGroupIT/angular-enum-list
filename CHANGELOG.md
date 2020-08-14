@@ -1,3 +1,12 @@
+## [4.0.2](https://github.com/LCGroupIT/angular-enum-listor/compare/v4.0.1...v4.0.2) (2020-08-14)
+
+
+### Bug Fixes
+
+* record.factory is not a function in runtime ([8869fb1](https://github.com/LCGroupIT/angular-enum-listor/commit/8869fb1))
+
+
+
 ## [4.0.1](https://github.com/LCGroupIT/angular-enum-listor/compare/v4.0.0...v4.0.1) (2020-07-08)
 
 
