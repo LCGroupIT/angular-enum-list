@@ -14,7 +14,6 @@ import { EnumsKeyPipe } from './enumKey.pipe';
         EnumsKeyPipe
     ],
     providers: [
-        AngularEnumsListModule,
         EnumsPipe,
         EnumsKeyPipe
     ]
