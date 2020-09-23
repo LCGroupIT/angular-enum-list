@@ -15,11 +15,11 @@ This package can be used for transformation enum's values to array where names a
     npm install angular-enum-list --save
     
 
-**2.** Import AngularEnumListModule to AppModule
+**2.** Import AngularEnumsListModule to AppModule
 
 ```typescript
 
-import { AngularEnumListModule } from 'angular-enum-list';
+import { AngularEnumsListModule } from 'angular-enum-list';
 
 @NgModule({
   bootstrap: [ AppComponent ],
@@ -27,7 +27,7 @@ import { AngularEnumListModule } from 'angular-enum-list';
     AppComponent
   ],
   import: [
-    AngularEnumListModule.forRoot('enums') // first parameter is localization namespace name,
+    AngularEnumsListModule.forRoot('enums') // first parameter is localization namespace name,
                                            // second parameter is separator, default ':'
   ]
 })
