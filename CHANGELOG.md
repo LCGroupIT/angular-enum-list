@@ -1,3 +1,12 @@
+## [4.0.3](https://github.com/LCGroupIT/angular-enum-listor/compare/4.0.2...4.0.3) (2020-12-02)
+
+
+### Bug Fixes
+
+* enumKey namespace is optional ([5c0df98](https://github.com/LCGroupIT/angular-enum-listor/commit/5c0df98))
+
+
+
 ## [4.0.2](https://github.com/LCGroupIT/angular-enum-listor/compare/v4.0.1...v4.0.2) (2020-08-14)
 
 
