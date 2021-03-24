@@ -1,3 +1,7 @@
+# [5.0.0](https://github.com/LCGroupIT/angular-enum-listor/compare/v5.0.0-1...v5.0.0) (2021-03-24)
+
+
+
 # [5.0.0-1](https://github.com/LCGroupIT/angular-enum-listor/compare/v5.0.0-0...v5.0.0-1) (2021-03-02)
 
 
